@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sum=0;
+        // input from User
+        let input = prompt("Enter a number in between 0 and 1 million")
+        // codition check input morethan 1 million or less than 0
+        if(input>1000000 || input<0)
+    {
+        alert("Number is Invalid ...Please enter number in between 0 and 1 million")
+    }
+    // conition check number is equal to 0 or 1 million
+    else if(input == 0 || input == 1000000){
+        alert("Please enter number in between 0 and 1 million")
+    }
+    // loop for sum
+    else{
+        for(i=0; i<=input;i++){
+            sum +=i
+        }
+        alert(sum)
+    }
+    </script>
+</body>
+</html>
