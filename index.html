@@ -10,6 +10,7 @@
     body {
       width: 100%;
       height: 100vh;
+      background-color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -37,6 +38,8 @@
       let input = prompt("Enter a number in between 0 and 1 million");
       // codition check input morethan 1 million or less than 0
       if (input > 1000000 || input < 0) {
+        document.body.style.backgroundColor = "#FCBCBC";
+
         document.getElementById("para").innerHTML =
           "Number is Invalid ..." +
           "<br>" +
@@ -47,6 +50,7 @@
       }
       // conition check number is equal to 0 or 1 million
       else if (input == 0 || input == 1000000) {
+        document.body.style.backgroundColor = "#FCBCBC";
         document.getElementById("para").innerHTML =
           "You can't Enter '0' or '1 million' !!!";
         document.getElementById("para2").innerHTML =
@@ -57,6 +61,7 @@
         for (i = 0; i <= input; i++) {
           sum += i;
         }
+        document.body.style.backgroundColor = "#BCFCD7";
         document.getElementById("para").style.color = "green";
         document.getElementById("para").innerHTML =
           "Sum of number upto  " + input + " = " + sum;
